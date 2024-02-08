@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+    <title>Piano Challenge</title>
+</head>
+
+<body>
+    <nav>
+        <center><img src="images/logo.png" alt="logo"></center>
+        <h3>Piano magic at your <span style="color: #EE5F3B;">fingertips</span></h3>
+    </nav>
+    <div class="board">
+        <div class="typing">
+            <p id="text"></p>
+        </div>
+        <div class="options">
+            <i class="fa" id="playIcon">▶</i>
+            <i class="fa" id="penIcon">✎</i>
+        </div>
+    </div>
+
+    <div id="textAreaContainer" style="display: none;">
+        <textarea cols="70" rows="8"></textarea>
+        <div>
+            <button id="valider">Valider</button>
+            <i class="fa-solid fa-xmark" id="closeIcon" style="color: #EE5F3B;"></i>
+        </div>
+    </div>
+
+    <div class="piano">
+        <ul class="set">
+            <li class="white key" data-sound="sounds/4-a.wav">a</li>
+            <li class="black key" data-sound="sounds/4-as.wav">2</li>
+            <li class="white key" data-sound="sounds/4-b.wav">z</li>
+            <li class="black key" data-sound="sounds/5-a.wav">3</li>
+            <li class="white key" data-sound="sounds/5-as.wav">e</li>
+            <li class="white key" data-sound="sounds/5-b.wav">r</li>
+            <li class="black key" data-sound="sounds/5-c.wav">5</li>
+            <li class="white key" data-sound="sounds/5-cs.wav">t</li>
+            <li class="black key" data-sound="sounds/5-d.wav">6</li>
+
+            <li class="white key" data-sound="sounds/5-ds.wav">y</li>
+            <li class="black key" data-sound="sounds/5-e.wav">7</li>
+            <li class="white key" data-sound="sounds/5-f.wav">u</li>
+            <li class="white key" data-sound="sounds/5-fs.wav">i</li>
+            <li class="black key" data-sound="sounds/5-g.wav">9</li>
+            <li class="white key" data-sound="sounds/5-gs.wav">o</li>
+            <li class="black key" data-sound="sounds/6-a.wav">0</li>
+            <li class="white key" data-sound="sounds/6-as.wav">p</li>
+            <li class="white key" data-sound="sounds/6-b.wav">w</li>
+            <li class="black key" data-sound="sounds/6-c.wav">s</li>
+            <li class="white key" data-sound="sounds/6-cs.wav">x</li>
+            <li class="black key" data-sound="sounds/6-d.wav">d</li>
+
+            <li class="white key" data-sound="sounds/6-ds.wav">c</li>
+            <li class="black key" data-sound="sounds/6-e.wav">f</li>
+            <li class="white key" data-sound="sounds/6-f.wav">v</li>
+            <li class="white key" data-sound="sounds/6-fs.wav">b</li>
+            <li class="black key" data-sound="sounds/6-g.wav">h</li>
+            <li class="white key" data-sound="sounds/6-gs.wav">n</li>
+            <li class="black key" data-sound="sounds/7-a.wav-">=</li>
+            <li class="white key" data-sound="sounds/7-as.wav">q</li>
+            <li class="white key" data-sound="sounds/7-b.wav">g</li>
+            <li class="black key" data-sound="sounds/7-c.wav">!</li>
+            <li class="white key" data-sound="sounds/7-cs.wav">1</li>
+            <li class="black key" data-sound="sounds/7-d.wav">;</li>
+
+            <li class="white key" data-sound="sounds/7-ds.wav">:</li>
+            <li class="black key" data-sound="sounds/7-e.wav">%</li>
+            <li class="white key" data-sound="sounds/7-f.wav">*</li>
+        </ul>
+    </div>
+
+    <footer>
+        <p>made by swayley <i class="fa-solid fa-heart" style="color: #EE5F3B;"></i></p>
+    </footer>
+</body>
+<script src="main.js"></script>
+
+</html>
